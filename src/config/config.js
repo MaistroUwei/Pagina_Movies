@@ -1,4 +1,4 @@
 export default {
-    ApiKey: ProcessingInstruction.env.REACT_APP_API_KEY,
-    Endpoint: ProcessingInstruction.env.REACT_APP_MOVIEDB_ENDPOINT
+    ApiKey: process.env.REACT_APP_API_KEY,
+    Endpoint:process.env.REACT_APP_MOVIEDB_ENDPOINT
 }
