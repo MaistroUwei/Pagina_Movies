@@ -6,14 +6,14 @@ import { Trending, Home, Top10, Login, Movie } from '../pages'
 export const MovieRoutes = () => {
   return (
     <>
-    <NavBar />
-    <Routes>
-    <Route path='/' element ={<Home />} />
-    <Route path='/trending' element ={<Trending />} />
-    <Route path='/top10' element ={<Top10 />} />
-    <Route path='/login' element ={<Login />} />
-    <Route path='/movie/:movieId/:language' element ={<Movie />} />
-    </Routes>     
+      <NavBar />
+      <Routes>
+        <Route path='/' element ={<Home />} />
+        <Route path='/trending' element ={<Trending />} />
+        <Route path='/top10' element ={<Top10 />} />
+        <Route path='/login' element ={<Login />} />
+        <Route path='/:media_type/:movieId' element ={<Movie />} />
+      </Routes>     
     </>
   )
 }

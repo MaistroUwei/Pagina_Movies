@@ -15,8 +15,8 @@ export const MovieCard = (props) => {
 
   const myTitle = name ? name : title
   const poster = `https://image.tmdb.org/t/p/original/${poster_path}`
-  const myOverview = overview.length > 100? `${overview.substring(0,99)}...`: overview; 
-
+  const myOverview = overview?.length > 100? `${overview.substring(0,99)}...`: overview; 
+  
   return (
     <div className='col'>
         <div className='card'>
@@ -35,7 +35,7 @@ export const MovieCard = (props) => {
                             <small className='text-muted'>Rating: {vote_average}</small>
                         </p>
                         <Link
-                        to={`/movie/${id}`}
+                        to={`/${media_type}/${id}`}
                         >
                         ... See More
                         </Link>
